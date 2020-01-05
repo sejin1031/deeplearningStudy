@@ -1,9 +1,12 @@
+#20200105 공부공부공부
 import matplotlib.pyplot as plt
 import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_breast_cancer
+
 cancer = load_breast_cancer()
+
 
 # print(cancer.data.shape,cancer.target.shape)
 # print(cancer.data[:3])
@@ -75,7 +78,9 @@ layer = SingleLayer()
 layer.fit(x_train,y_train)
 
 
-print(layer.score(x_test,y_test))
+# print(layer.score(x_test,y_test))
 
-plt.plot(layer.losses)
-plt.show()
+# plt.plot(layer.losses)
+# plt.show()
+
+sdg = SGDClassifier()
