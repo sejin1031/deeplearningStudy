@@ -28,3 +28,4 @@ y_train_encoded = tf.keras.utils.to_categorical(y_train)
 y_val_encoded = tf.keras.utils.to_categorical(y_val)
 
 history = model.fit(x_train,y_train_encoded,epochs=40,validation_data=(x_val,y_val_encoded))
+
